@@ -6,7 +6,7 @@ const Main = () => {
     const [cat, setCat] = useState('');
     const [list, setList] = useState(items);
     useEffect(() => {
-        setList(items.filter((item) => item.Tags.includes(cat.toLowerCase())));
+        setList(items.filter((item) => item.Tags.toLowerCase().includes(cat.toLowerCase())));
     }, [cat])
   return (
     <main className="grow">
@@ -16,8 +16,8 @@ const Main = () => {
             <h1 className="text-6xl font-bold tracking-tight font-serif border-b pb-3">
               Electronics
             </h1>
-            <div className="bg-slate-400/20 px-6 py-1 rounded-2xl w-[400px] flex gap-[20px]">
-              <div className="flex justify-center items-center">
+            <div className="bg-slate-400/20 px-6 py-1 w-[400px] rounded-2xl flex items-center gap-[20px] group h-[50px]">
+              <div className={`flex justify-center items-center ${cat != '' ? 'translate-y-[9px]' : ""} group-focus-within:translate-y-[9px] transition-all duration-300 linear`}>
                 <svg
                 width="24"
                 height="24"
@@ -47,11 +47,12 @@ const Main = () => {
                 </defs>
               </svg>
               </div>
-              <div>
+              <div className="relative">
+                <p className={`absolute top-0 left-0 pointer-events-none group-focus-within:translate-x-[1px] group-focus-within:translate-y-[-5px] group-focus-within:text-xs transition-all duration-300 linear ${cat != '' ? 'translate-y-[-5px] translate-x-[1px] text-xs': ""}`}>Search For A Phone</p>
                 <input
                 type="text"
-                placeholder="Search For A Phone"
-                className="outline-none"
+                placeholder=""
+                className={`outline-none w-[400px] focus:pt-4 ${cat != '' ? 'pt-4': ""}`}
                 value={cat}
                 onChange={(e) => setCat(e.target.value)}
               />
