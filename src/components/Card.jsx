@@ -56,6 +56,9 @@ const Card = ({ item }) => {
           onClick={notify}
         >
           {click ? "Items Added To Cart!" : "Add To Cart"}
+
+
+          
         </button>
         </div>
       </div>
