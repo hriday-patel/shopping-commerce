@@ -1,0 +1,37 @@
+[{
+    "name": "Samsung Galaxy S25 Ultra 5g phone",
+    "price": 699,
+    "source": "/samsung.jpg",
+    "count": 1,
+    "Tags": "mobile phone samsung galaxy s25 ultra 5g 5g phone"
+  },{
+    "name": "Apple Iphone 17 Air",
+    "price": 799,
+    "source": "/apple.jpg",
+    "count": 1,
+    "Tags": "mobile phone apple iphone 17 air 5g phone"
+  },{
+    "name": "Google Pixel 10 pro",
+    "price": 599,
+    "source": "/google.jpg",
+    "count": 1,
+    "Tags": "mobile phone google pixel 10 pro 5g 5g phone"
+  },{
+    "name": "Motorola Edge 60 Pro",
+    "price": 399,
+    "source": "/motorola.jpg",
+    "count": 1,
+    "Tags": "mobile phone motorola edge 60 pro 5g 5g phone"
+  },{
+    "name": "Huawei 5G Phone",
+    "price": 399,
+    "source": "/huawei.jpg",
+    "count": 1,
+    "Tags": "mobile phone huawei 5G phone 5g 5g phone"
+  }, {
+    "name": "Xiaomi Phone 5G Pro",
+    "price": 499,
+    "source": "/xiaomi.jpg",
+    "count": 1,
+    "Tags": "mobile phone xiaomi phone 5G pro 5g 5g phone"
+  }]
